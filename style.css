@@ -70,6 +70,10 @@ main {
   font-size: 15px;
 }
 
+.navbar .nav-links a:hover {
+  text-decoration: underline;
+}
+
 .navbar .nav-actions {
   display: flex;
   gap: 10px;
@@ -646,9 +650,11 @@ footer nav a:hover {
     display: none;
   }
 
-  .nav-actions-mobile {
+  .nav-links .cart {
     display: flex;
-    gap: 10px;
+    padding: 10px;
+    background-color: var(--primary);
+    border-radius: 5px;
   }
 
   .menu-toggle {
