@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dekoor</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar">
+    <div class="brand">
+      <img src="./assets/logo.png" alt="logo" width="45" loading="lazy" />
+      <a href="#hero">Dekoor</a>
+    </div>
+
+    <div class="nav-links" id="nav-menu">
+      <a href="#about">About us</a>
+      <a href="#furniture">Furniture</a>
+      <a href="#partnerships">Partnerships</a>
+      <a href="#contact">Contact</a>
+      <div class="nav-actions-mobile">
+        <button class="cart">
+          <img src="./assets/cart.png" alt="cart" width="12px" />
+        </button>
+      </div>
+    </div>
+
+    <div class="nav-actions">
+      <a class="btn">Sign Up</a>
+      <button class="cart">
+        <img src="./assets/cart.png" alt="cart" width="12px" />
+      </button>
+    </div>
+
+    <button class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+  <!-- navbar end -->
+
+  <main>
+    <!-- hero -->
+    <section class="hero" id="#hero">
+      <div class="left">
+        <h1>The kind of <span style="color: #817253;">furniture</span> you have been looking for</h1>
+        <div class="group-btn">
+          <button class="btn-search"><img src="./assets/search.svg" />SEARCH CATALOG</button>
+          <button class="btn-watch"><img src="./assets/play.svg" />WATCH VIDEOS</button>
+        </div>
+      </div>
+      <div class="right">
+        <img id="hero-image" src="" alt="product">
+        <div class="price">
+          <div class="price-tag" id="hero-price">$--</div>
+          <div class="product-name" id="hero-name">...</div>
+          <button class="btn-detail">View Details ></button>
+        </div>
+      </div>
+    </section>
+    <!-- hero end -->
+
+    <!-- about -->
+    <section class="about" id="about">
+      <h3>WHY CHOOSE US?</h3>
+      <h2>We care about details and the quality of our products</h2>
+      <div class="reasons">
+        <div class="reason">
+          <div class="reason-icon">
+            <img src="./assets/search-about.svg" width="20" />
+          </div>
+          MANUFACTURED WITH QUALITY MATERIALS
+        </div>
+        <div class="reason">
+          <siv class="reason-icon">
+            5
+          </siv>
+          YEARS OF WARRANTY FOR EACH PRODUCT
+        </div>
+        <div class="reason">
+          <div class="reason-icon">
+            <img src="./assets/copper.png" width="20" />
+          </div>
+          20 YEARS OF EXPERTISE
+        </div>
+      </div>
+    </section>
+    <!-- about end -->
+
+    <!-- partnership -->
+    <section class="partnership" id="partnership">
+      <div class="brand-total">
+        <h2>25+</h2>
+        <p>PARTNERED BRANDS</p>
+      </div>
+      <div class="brand-logo">
+        <img src="./assets/gusto.png" alt="gusto" width="70" />
+        <img src="./assets/stripe.png" alt="stripe" width="70" />
+        <div style="display: flex; align-items: center; gap: 5px;">
+          <img src="./assets/th-logo.png" alt="treehouse" width="25" />
+          <img src="./assets/th-name.png" alt="treehouse" width="90" />
+        </div>
+        <img src="./assets/upwork.png" alt="upwork" width="110" />
+      </div>
+    </section>
+    <!-- partnership end -->
+
+    <!-- furniture -->
+    <section class="furniture" id="furniture">
+      <div class="left">
+        <div class="recommend-images" id="recommend-images">
+          <img class="product-image" src="" alt="product" loading="lazy" />
+          <img class="product-image" src="" alt="product" loading="lazy" />
+          <img class="product-image" src="" alt="product" loading="lazy" />
+        </div>
+      </div>
+      <div class="right">
+        <span>Categories</span>
+        <h2>Furniture Sets Recommendations</h2>
+        <h3>Bedroom</h3>
+        <div class="description">
+          <h3>Living Room</h3>
+          <p>Enjoy a great living room aesthetics with your family <br />Design created for increased comfortability</p>
+        </div>
+        <h3>Home Office</h3>
+        <h3>Gaming Room</h3>
+      </div>
+    </section>
+    <!-- furniture end -->
+
+    <!-- product -->
+    <section class="product" id="product">
+      <div class="product-heading">
+        <div style="color: #e5f0b6; display: flex; flex-direction: column;">
+          <span>OUR PRODUCTS</span>
+          <h2>This month's best seller</h2>
+        </div>
+        <button class="btn-more">SEE MORE</button>
+      </div>
+
+      <div class="carousel" id="carousel"></div>
+      <div class="controls">
+        <button class="btn" id="prev">&#8592;</button>
+        <button class="btn" id="next">&#8594;</button>
+      </div>
+    </section>
+    <!-- product end -->
+
+    <!-- contact -->
+    <section class="contact" id="contact">
+      <span>LIMITED DEALS</span>
+      <h2>Become a member and get 10% off of your first purchase</h2>
+      <form>
+        <input type="email" id="email" name="email" placeholder="Enter your email here" />
+        <button type="submit" class="submit-btn">
+          <img src="./assets/mail.svg" width="20" />
+        </button>
+      </form>
+    </section>
+    <!-- contact end -->
+  </main>
+
+  <!-- footer -->
+  <footer>
+    <div class="left">
+      <div class="brand">
+        <img src="./assets/logo.png" alt="logo" width="30" />
+        <h5>Deekor</h5>
+      </div>
+      <p>Dekoor is a furniture company created to fulfill the needs of family with aesthetics feeling in their
+        furniture. Always pay attention to details and give clear communication for the customers. Priority of our
+        design is comfortability.</p>
+      <span>© Copyright 2022 Dekoor</span>
+    </div>
+    <div class="right">
+      <nav>
+        <h6>Support</h6>
+        <a href="#">FAQ</a>
+        <a href="#">Shipping & Returns</a>
+        <a href="#">Care guide</a>
+        <a href="#">Reedem warranty</a>
+      </nav>
+      <nav>
+        <h6>Social Media</h6>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">TikTok</a>
+      </nav>
+      <nav>
+        <h6>About Us</h6>
+        <a href="#">Our Story</a>
+        <a href="#">Designer</a>
+        <a href="#">Craftmanship</a>
+        <a href="#">Sustainability</a>
+        </n>
+    </div>
+  </footer>
+  <!-- footer end -->
+</body>
+<script src="script.js"></script>
+
+</html>
